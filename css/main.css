@@ -1,0 +1,137 @@
+/***********************
+GENERAL
+***********************/
+
+.underline-green {
+    border-bottom: 0.25em solid #52F2F2;
+}
+
+.underline-red {
+    border-bottom: 0.25em solid #F25252;
+}
+
+
+/***********************
+NAVIGATION
+***********************/
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    background-color: #c1c1c1;
+    height: 10em;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    float: right;
+    width: 25%;
+    top: 30%;
+}
+
+nav li {
+    color: #111;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a.active {
+    border-bottom: 0.4rem solid black;
+}
+
+nav a:link, nav a:visited {
+    color: black;
+}
+nav ul a:hover {
+    border-bottom: 0.4rem solid black;
+}
+
+
+
+/***********************
+LANDING SECTION
+***********************/
+
+.section-launch {
+    padding: 7em 5em;
+}
+
+.landing-text {
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 3em;
+}
+
+a.resume-link, a.resume-link:link, a.resume-link:visited {
+    text-decoration: none;
+    border-bottom: 0.25em solid black;
+    color: black;
+}
+a.resume-link:hover, a.resume-link:focus {
+    background-color: black;
+    border-bottom: .5em solid white;
+    color: white;
+}
+
+#resume {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+
+/*THISIS THE CSS FLIP BRUHHHH*/
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+    text-align: center;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
