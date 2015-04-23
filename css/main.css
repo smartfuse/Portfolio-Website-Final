@@ -135,3 +135,32 @@ a.resume-link:hover, a.resume-link:focus {
 .back {
 	transform: rotateY(180deg);
 }
+
+.back-logo {
+			position: absolute;
+			top: 40px;
+			left: 90px;
+			width: 160px;
+			height: 117px;
+		}
+
+.back-title {
+			font-weight: bold;
+			color: #111;
+			position: absolute;
+			top: 180px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			font-size: 22px;
+		}
+
+		.back p {
+			position: absolute;
+			bottom: 40px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			padding: 0 20px;
+			font-size: 18px;
+		}
