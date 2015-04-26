@@ -2,12 +2,8 @@
 GENERAL
 ***********************/
 
-.underline-green {
-    border-bottom: 0.25em solid #52F2F2;
-}
-
-.underline-red {
-    border-bottom: 0.25em solid #F25252;
+.name{
+    margin: 10px;
 }
 
 
@@ -20,7 +16,7 @@ nav {
     position: fixed;
     top: 0;
     padding: 0;
-    background-color: #c1c1c1;
+    background-color: #fff;
     height: 10em;
 }
 
