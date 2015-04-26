@@ -6,6 +6,13 @@ GENERAL
     margin: 10px;
 }
 
+li{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    position: relative;
+}
+
 
 /***********************
 NAVIGATION
@@ -27,7 +34,7 @@ nav ul{
     position: relative;
     float: right;
     width: 25%;
-    top: 30%;
+    top: auto;
 }
 
 nav li {
@@ -98,8 +105,8 @@ a.resume-link:hover, a.resume-link:focus {
 	}
 
 .flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
+	width: 525px;
+	height: 300px;
     text-align: center;
 }
 
