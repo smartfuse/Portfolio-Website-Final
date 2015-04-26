@@ -6,13 +6,25 @@ GENERAL
     margin: 10px;
 }
 
+ul {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+}
+
 li{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: inline-block;
     position: relative;
 }
 
+#container {
+margin: 0 auto;
+width: 80%;
+overflow: auto;
+margin: 20px auto;
+}   
 
 /***********************
 NAVIGATION
@@ -105,8 +117,8 @@ a.resume-link:hover, a.resume-link:focus {
 	}
 
 .flip-container, .front, .back {
-	width: 525px;
-	height: 300px;
+	width: 460px;
+	height: 290px;
     text-align: center;
 }
 
@@ -141,8 +153,9 @@ a.resume-link:hover, a.resume-link:focus {
 
 .back-logo {
 			position: absolute;
-			top: 40px;
-			left: 90px;
+            align-content: center;
+			top: 20px;
+			padding: 0 auto;
 			width: 160px;
 			height: 117px;
 		}
