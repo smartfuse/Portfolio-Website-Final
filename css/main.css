@@ -9,7 +9,7 @@ GENERAL
 ul {
     padding-left: 10px;
     padding-right: 10px;
-    width: auto;
+    text-align: center;
 }
 
 li{
@@ -20,10 +20,7 @@ li{
 }
 
 #container {
-margin: 0 auto;
-width: 80%;
-overflow: auto;
-margin: 20px auto;
+    overflow: auto;
 }   
 
 /***********************
@@ -117,7 +114,7 @@ a.resume-link:hover, a.resume-link:focus {
 	}
 
 .flip-container, .front, .back {
-	width: 460px;
+	width: 580px;
 	height: 290px;
     text-align: center;
 }
@@ -126,7 +123,8 @@ a.resume-link:hover, a.resume-link:focus {
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
+    width: 100%;
+    align-content: center;
 	position: relative;
 }
 
