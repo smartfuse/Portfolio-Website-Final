@@ -6,28 +6,55 @@
         <meta charset="utf-8">
         <meta name="description" content="Design by Neeraj Aggarwal">
         <meta name="author" content="Neeraj Aggarwal">
-        <link rel="stylesheet" href="css/easy-responsive-tabs.css">
+        <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/jquery-2.1.3.min.js"></script>
         <script src="js/jquery.typer.js"></script>
     </head>
-
-    <body>
     
-        <!--Navigation-->
+       <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
         
-        <nav>
-            <h3 class="name">Neeraj Aggarwal</h3>
-            <ul>
-                <li><a href="#work" id="work-link">Work</a></li>
-                <li><a href="#about" id="about-link">About</a></li>
-                <li><a href="#contact" id="contact-link">Contact</a></li>
-            </ul>
-        </nav>
-        <!--/Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Neeraj Aggarwal</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+        
 
         <!--Landing-->
-        
         <div class="section-launch">
             <h1 class="landing-text">
                 I'm <span>Neeraj</span> —
@@ -38,79 +65,83 @@
         
         <!--/Landing-->
 
-        <div id="container">
-        <ul>
-        <!--Projects: Prioritize-->
+        <!--/Work-->
+        <section id="work">
+            <div id="full-container">
+                <ul>
+                <!--Projects: Prioritize-->
+                    <li>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front" style="background: url(assets/prioritize-landing3.jpg) no-repeat center center; background-size: cover;"></div>
+                                <div class="back">
+                                    <div class="back-logo" style="background: url(/assets/prioritize-logo.jpg) no-repeat center center; background-size: cover;"></div>
+                                    <div class="back-title">Prioritize</div>
+                                <p>[Insert Description Here]</p>                             
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+            <!--/Projects: Prioritize-->
+
+            <!--Projects: MakeHacks-->
+                    <li>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front" style="background: url(assets/makehacks-landing2.jpg) no-repeat center center; background-size: cover;"></div>
+                                <div class="back">
+                                    <div class="back-logo" style="background: url(/assets/makehacks-logo.jpg) no-repeat center center; background-size: cover;"></div>
+                                    <div class="back-title">MakeHacks</div>
+                                    <p>Organized MakeHacks</p>                             
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+            <!--/Projects: MakeHacks-->
+                </ul>
+
+                <ul>
+            <!--Projects: One for One-->
+                    <li>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front" style="background: url(assets/oneforone-landing.jpg) no-repeat center center; background-size: cover;"></div>
+                                <div class="back">
+                                    <div class="back-logo" style="background: url(/assets/atypical-logo.jpg) no-repeat center center; background-size: cover;"></div>
+                                    <div class="back-title">One for One</div>
+                                    <p>A Way to Give back to the community</p>                             
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+            <!--/Projects: One for One-->
+
+            <!--Projects: ResearchFrog-->
+                    <li>
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front" style="background: url(assets/researchfrog-landing.jpg) no-repeat center center; background-size: cover;"></div>
+                                <div class="back">
+                                    <div class="back-logo" style="background: url(/assets/atypical-logo.jpg) no-repeat center center; background-size: cover;"></div>
+                                    <div class="back-title">ResearchFrog</div>
+                                    <p>Student Science Research</p>                             
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+            <!--/Projects: ResearchFrog-->
+            </ul>       
+        </div>
+    </section>
+    <!--/Work-->    
         
-            <li>
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-           <div class="flipper">
-              <div class="front" style="background: url(assets/prioritize-landing3.jpg) no-repeat center center; background-size: cover;">
-               </div>
-              <div class="back">
-                <div class="back-logo" style="background: url(/assets/prioritize-logo.jpg) no-repeat center center; background-size: cover;"></div>
-                    <div class="back-title">Prioritize</div>
-                        <p>[Insert Description Here]</p>                             
-              </div>
-           </div>
-        </div>
-            </li>
-        <!--/Projects: Prioritize-->
+    <script src="js/script.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
         
-        <!--Projects: MakeHacks-->
-            <li>
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-           <div class="flipper">
-              <div class="front" style="background: url(assets/makehacks-landing2.jpg) no-repeat center center; background-size: cover;">
-               </div>
-              <div class="back">
-                <div class="back-logo" style="background: url(/assets/makehacks-logo.jpg) no-repeat center center; background-size: cover;"></div>
-                    <div class="back-title">MakeHacks</div>
-                        <p>Organized MakeHacks</p>                             
-              </div>
-           </div>
-        </div>
-                </li>
-        <!--/Projects: MakeHacks-->
-            </ul>
-        <ul>
-    
-        <!--Projects: One for One-->
-            <li>
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-           <div class="flipper">
-              <div class="front" style="background: url(assets/oneforone-landing.jpg) no-repeat center center; background-size: cover;">
-               </div>
-              <div class="back">
-                <div class="back-logo" style="background: url(/assets/atypical-logo.jpg) no-repeat center center; background-size: cover;"></div>
-                    <div class="back-title">One for One</div>
-                        <p>A Way to Give back to the community</p>                             
-              </div>
-           </div>
-        </div>
-                </li>
-        <!--/Projects: One for One-->
-        
-            
-            
-        <!--Projects: ResearchFrog-->
-            <li>
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-           <div class="flipper">
-              <div class="front" style="background: url(assets/researchfrog-landing.jpg) no-repeat center center; background-size: cover;">
-               </div>
-              <div class="back">
-                <div class="back-logo" style="background: url(/assets/atypical-logo.jpg) no-repeat center center; background-size: cover;"></div>
-                    <div class="back-title">ResearchFrog</div>
-                        <p>Student Science Research</p>                             
-              </div>
-           </div>
-        </div>
-                </li>
-        <!--/Projects: ResearchFrog-->
-        </ul>
-    </div>
-        <script src="js/script.js"></script>
-    
     </body>
 </html>

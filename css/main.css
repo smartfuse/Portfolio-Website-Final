@@ -19,56 +19,9 @@ li{
     position: relative;
 }
 
-#container {
+#full-container {
     overflow: auto;
 }   
-
-/***********************
-NAVIGATION
-***********************/
-
-nav {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    padding: 0;
-    background-color: #fff;
-    height: 10em;
-}
-
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-    float: right;
-    width: 25%;
-    top: auto;
-}
-
-nav li {
-    color: #111;
-    padding-left: 5px;
-    padding-right: 5px;
-    display: inline-block;
-    font-size: 1.5em;
-}
-
-nav a {
-    font-weight: bold;
-    text-decoration: none;
-}
-nav a.active {
-    border-bottom: 0.4rem solid black;
-}
-
-nav a:link, nav a:visited {
-    color: black;
-}
-nav ul a:hover {
-    border-bottom: 0.4rem solid black;
-}
-
 
 
 /***********************
@@ -76,13 +29,19 @@ LANDING SECTION
 ***********************/
 
 .section-launch {
-    padding: 7em 5em;
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+    padding-left: 4em;
+    padding-right: 3em;
 }
 
 .landing-text {
-    font-size: 1.5em;
+    padding-top: 2.5em;
+    font-size: 2em;
     text-align: left;
-    line-height: 3em;
+    line-height: 3em
 }
 
 a.resume-link, a.resume-link:link, a.resume-link:visited {
@@ -131,7 +90,6 @@ a.resume-link:hover, a.resume-link:focus {
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
