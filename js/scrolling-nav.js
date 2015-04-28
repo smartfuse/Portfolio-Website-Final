@@ -2,7 +2,11 @@ $(document).ready(function(){
     $(window).scroll(function() {
         winHeight = $(window).height();
         scrolled = $(window).scrollTop();
+<<<<<<< HEAD
         $(".intro-shit").fadeTo(0, 1 - scrolled/winHeight * 4);
+=======
+        $(".section-launch").fadeTo(0, 1 - scrolled/winHeight * 4);
+>>>>>>> origin/master
         if ($(".navbar").offset().top > 50) {
             $(".navbar-fixed-top").addClass("top-nav-collapse");
         } else {
