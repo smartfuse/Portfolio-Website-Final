@@ -1,9 +1,9 @@
 /***********************
-GENERAL
-***********************/
+ GENERAL
+ ***********************/
 
-.name{
-    margin: 10px;
+body, p, h1, h2, h3, span {
+    font-family: Avenir Next;
 }
 
 ul {
@@ -17,117 +17,183 @@ li{
     padding-right: 10px;
     display: inline-block;
     position: relative;
+    max-width: 100%;
 }
 
-#full-container {
+@media(min-width: 768px) {
+    .full-container {
+        padding-top: 35px;
+    }
+}
+
+@media(max-width: 768px) {
+    .full-container {
+        padding-top: 20px;
+    }
+}
+
+.full-container {
     height: 100%;
-    padding-top: 45px;
+    padding-bottom: 35px;
     overflow: auto;
 }
 
 /***********************
-LANDING SECTION
-***********************/
+ LANDING SECTION
+ ***********************/
 
 .section-launch {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #fff;
-    padding-left: 4em;
-    padding-right: 3em;
-    background-color: aqua;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/cover.jpg);
+    background-position: center;
+    -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.7);
+   -moz-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 1000;
 }
 
-.landing-text {
-    padding-top: 2.5em;
-    font-size: 2em;
-    text-align: left;
-    line-height: 3em
+.fill-height {
+    height: 100%;
+}
+
+.profile-container {
+    max-width: 170px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
 }
 
 .portrait {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 100%;
-	width: 200px;
-	height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    border: 6px solid #ffffff;
+    width: 125px;
+    height: 125px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
 }
 
-
-/*THISIS THE CSS FLIP BRUHHHH*/
-
-/* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000;
-}
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
-.flip-container, .front, .back {
-	width: 580px;
-	height: 290px;
-    text-align: center;
+.title .name {
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-    width: 100%;
-    align-content: center;
-	position: relative;
+.title {
+    color: #ffffff;
+    font-weight: 350;
+    font-size: 20px;
+    font-weight: 400;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-/* hide back of pane during swap */
+.contact {
+    top: 50%;
+    right: 0px;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.contact i {
+    margin-left: 15px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.section-projects{
+    padding-top: 350px;
+    z-index: 999;
+}
+
+/***********************
+ CSS Animations
+ ***********************/
+
+
+@media(min-width: 768px) {
+    .flip-container, .front, .back {
+        width: 580px;
+        height: 290px;
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .flip-container, .front, .back {
+        width: 360px;
+        height: 171px;
+        text-align: center;
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
 .front, .back {
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
 .back {
-	transform: rotateY(180deg);
+    display: none;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.front:hover .back {
+    display: block;
 }
 
 .back-logo {
-			position: absolute;
-            align-content: center;
-			top: 20px;
-			padding: 0 auto;
-			width: 160px;
-			height: 117px;
-		}
+    position: absolute;
+    align-content: center;
+    top: 20px;
+    padding: 0 auto;
+    width: 160px;
+    height: 117px;
+}
 
 .back-title {
-			font-weight: bold;
-			color: #111;
-			position: absolute;
-			top: 180px;
-			left: 0;
-			right: 0;
-			text-align: center;
-			font-size: 22px;
-		}
+    font-weight: bold;
+    color: #111;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 22px;
+}
 
-		.back p {
-			position: absolute;
-			bottom: 40px;
-			left: 0;
-			right: 0;
-			text-align: center;
-			padding: 0 20px;
-			font-size: 18px;
-		}
+.back p {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+span > span {
+    display: none;
+}

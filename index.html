@@ -1,150 +1,123 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
 <html>
     <head>
-        <title>Neeraj Aggarwal | Portfolio</title>
+        <title>Neeraj Aggarwal</title>
         <meta charset="utf-8">
         <meta name="description" content="Design by Neeraj Aggarwal">
         <meta name="author" content="Neeraj Aggarwal">
+                    
         <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <!-- Custom CSS -->
+        <link href="css/scrolling-nav.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/jquery-2.1.3.min.js"></script>
-        <script src="js/jquery.typer.js"></script>
     </head>
     
-       <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <body id="page-top">
         
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Neeraj Aggarwal</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-        
-
         <!--Landing-->
         <div class="section-launch">
-            <div class="intro-shit">
-            <h1 class="landing-text">
-                I'm <span>Neeraj</span> —
-                An innovater based in the Bay <br> Area with expertise in
-                <span data-typer-targets="[experience 1].,[experience 2].,[experience 3].,[experience 4].,[experience 5]."></span>
-            </h1>
-            <img class="portrait" src="assets/portrait.jpg"/>
-        </div>
+            <div class="overlay">
             </div>
+            <div class="container fill-height">
+                <div class="col-sm-3 fill-height profile-container">
+                    <img class="portrait" src="assets/portrait.jpg"/>
+                </div>
+                <div class="col-sm-9 fill-height hidden-xs">
+                    <div class="title">
+                        <div class="name">Neeraj Aggarwal</div>
+                        Hello, I know
+                        <span data-typer-targets="HTML.,JavaScript.,CSS.,Bootstrap.,Web Development."></span>
+                    </div>
+                    <div class="contact">
+                        <a target="_blank" href="https://github.com/aggarwalneeraj141"><i class="fa fa-github-square"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/aggarwal.neeraj141"><i class="fa fa-facebook-square"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/aggarwalneeraj141"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <!--/Landing-->
         
         <!--/Work-->
-        <section id="work">
-            <div id="full-container">
+        <section class="section-projects">
+            <div class="full-container">
                 <ul>
-                <!--Projects: Prioritize-->
+                    <!--Projects: Prioritize-->
                     <li>
-                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flip-container">
                             <div class="flipper">
-                                <div class="front" style="background: url(assets/prioritize-landing3.jpg) no-repeat center center; background-size: cover;"></div>
-                                <div class="back">
-                                    <div class="back-logo" style="background: url(/assets/prioritize-logo.jpg) no-repeat center center; background-size: cover;"></div>
-                                    <div class="back-title">Prioritize</div>
-                                <p>[Insert Description Here]</p>                             
+                                <div class="front" style="background: url(assets/prioritize-landing3.jpg) no-repeat center center; background-size: cover;">
+                                    <div class="back">
+                                        <div class="back-title">Prioritize</div>
+                                        <p>A Tool to Help Plan</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-            <!--/Projects: Prioritize-->
-
-            <!--Projects: MakeHacks-->
+                    <!--/Projects: Prioritize-->
+                    
+                    <!--Projects: MakeHacks-->
                     <li>
-                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flip-container">
                             <div class="flipper">
-                                <div class="front" style="background: url(assets/makehacks-landing2.jpg) no-repeat center center; background-size: cover;"></div>
-                                <div class="back">
-                                    <div class="back-logo" style="background: url(/assets/makehacks-logo.jpg) no-repeat center center; background-size: cover;"></div>
-                                    <div class="back-title">MakeHacks</div>
-                                    <p>Organized MakeHacks</p>                             
+                                <div class="front" style="background: url(assets/makehacks-landing2.jpg) no-repeat center center; background-size: cover;">
+                                    <div class="back">
+                                        <div class="back-title">MakeHacks</div>
+                                        <p>Organized MakeHacks</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-            <!--/Projects: MakeHacks-->
+                    <!--/Projects: MakeHacks-->
                 </ul>
-
+                
                 <ul>
-            <!--Projects: One for One-->
+                    <!--Projects: One for One-->
                     <li>
-                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flip-container">
                             <div class="flipper">
-                                <div class="front" style="background: url(assets/oneforone-landing.jpg) no-repeat center center; background-size: cover;"></div>
-                                <div class="back">
-                                    <div class="back-logo" style="background: url(/assets/atypical-logo.jpg) no-repeat center center; background-size: cover;"></div>
-                                    <div class="back-title">One for One</div>
-                                    <p>A Way to Give back to the community</p>                             
+                                <div class="front" style="background: url(assets/oneforone-landing.jpg) no-repeat center center; background-size: cover;">
+                                    <div class="back">
+                                        <div class="back-title">One for One</div>
+                                        <p>A Way to Give back to the community</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-            <!--/Projects: One for One-->
-
-            <!--Projects: ResearchFrog-->
+                    <!--/Projects: One for One-->
+                    
+                    <!--Projects: ResearchFrog-->
                     <li>
-                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flip-container">
                             <div class="flipper">
-                                <div class="front" style="background: url(assets/researchfrog-landing.jpg) no-repeat center center; background-size: cover;"></div>
-                                <div class="back">
-                                    <div class="back-logo" style="background: url(/assets/atypical-logo.jpg) no-repeat center center; background-size: cover;"></div>
-                                    <div class="back-title">ResearchFrog</div>
-                                    <p>Student Science Research</p>                             
+                                <div class="front" style="background: url(assets/researchfrog-landing.jpg) no-repeat center center; background-size: cover;">
+                                    <div class="back">
+                                        <div class="back-title">ResearchFrog</div>
+                                        <p>Student Science Research</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-            <!--/Projects: ResearchFrog-->
-                </ul>    
+                    <!--/Projects: ResearchFrog-->
+                </ul>
             </div>
         </section>
-        <!--/Work-->   
-           
+        <!--/Work-->
         
-    
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-    <script src="js/script.js"></script>
+        <!-- Scrolling Nav JavaScript -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/jquery.typer.js"></script>
+        <script src="js/script.js"></script>
         
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
